@@ -167,12 +167,11 @@
 }
 
 .navbar .navbar-toggler {
-    padding: 8px 15px;
+    padding: 8px 7px;
     color: var(--bs-dark);
-    background: var(--bs-secondary);
 }
 
-.nav-bar .navbar-toggler { 
+.nav-bar .navbar-toggler {
     color: var(--bs-dark);
     box-shadow: none !important;
 }
@@ -420,8 +419,11 @@
 .about-title{
     font-size: 40px;
     font-weight: 700;
+    margin-bottom: 15px;
 }
-
+.about-desc{
+    text-align: justify;
+}
 
 
 
@@ -583,7 +585,18 @@ align-items: center;
     justify-content: center;
     align-items: center;
 }
-
+.contact-main-bg{
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 18,  72, 0.7), rgba(0, 18, 72, 0.7)), url(../images/contact-us-bananer-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 .digital-marketing-main-sec{
@@ -601,7 +614,32 @@ align-items: center;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+.dg-card1{
+    border-top: 6px solid #00246B;
+}
+.dg-card2{
+    border-top: 6px solid #2C5F2D;
+}
+.dg-card3{
+    border-top: 6px solid #735DA5;
+}
+.dg-card4{
+    border-top: 6px solid #F52549;
+}
+.dg-card5{
+    border-top: 6px solid #FFBB00;
+}
+.dg-card6{
+    border-top: 6px solid #2F3C7E;
+}
+
+
 .digital-marketing-text-card{
     display: flex;
     justify-content: center;
@@ -620,7 +658,7 @@ align-items: center;
     font-weight: 800;
 }
 .digital-marketing-description{
-
+    text-align: justify;
 }
 
 .digital-marketing-card:hover {
@@ -629,9 +667,9 @@ align-items: center;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.row:hover .digital-marketing-card:not(:hover) {
+/* .row:hover .digital-marketing-card:not(:hover) {
     filter: blur(2px);
-}
+} */
 /* digital marketing services end */
 
 
@@ -1102,10 +1140,46 @@ align-items: center;
 
 
 
-
-
-
-
+.navbar-toggler {
+    border: none;
+}
+.navbar-toggler .icon-bar {
+    width: 34px;
+    height: 1px !important;
+    background-color: #1b1b1b;
+    display: block;
+    padding: 2px 0px;
+    transition: all 0.4s;
+}
+.navbar-toggler .icon-bar + .icon-bar {
+    margin-top: 4px;
+}
+.navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+    position: relative;
+    top: 0;
+}
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+}
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+    position: relative;
+    top: 0;
+}
+.navbar-toggler:not(.collapsed) .top-bar {
+    transform: rotate(45deg);
+    position: relative;
+    top: 7px;
+}
+.navbar-toggler:not(.collapsed) .middle-bar {
+    opacity: 0;
+}
+.navbar-toggler:not(.collapsed) .bottom-bar {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -9px;
+}
 
 
 

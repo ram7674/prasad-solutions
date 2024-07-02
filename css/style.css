@@ -415,7 +415,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px 0px;
+    padding: 55px 0px;
 }
 .about-title{
     font-size: 40px;
@@ -490,12 +490,155 @@ align-items: center;
 
 .why-choose-main-tit{
     font-size: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     font-weight: 700;
 }
 .why-choose-tit{
     color: #fc7600;
 }
+.our-services-main-tit{
+    font-size: 40px;
+    margin-bottom: 60px;
+    font-weight: 700;
+}
+.owl-prev{
+    display: none;
+}
+.owl-next{
+    display: none;
+}
+
+
+
+
+
+/* digital marketing services Start */
+.digital-marketing-main-bg{
+    height: 400px;
+    background: linear-gradient(rgba(0, 18, 72, 0.7), rgba(0, 18, 72, 0.7)), url(../images/digital-marketing-banners-image.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.web-development-main-bg{
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 18, 72, 0.7), rgba(0, 18, 72, 0.7)), url(../images/all-banner-img.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.marketing-sales-main-bg{
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 18, 72, 0.7), rgba(0, 18, 72, 0.7)), url(../images/Marketing-sales-banner-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.event-management-main-bg{
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 18, 72, 0.7), rgba(0, 18, 72, 0.7)), url(../images/event-management-banner-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.k-p-o-main-bg{
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 18, 72, 0.7), rgba(0, 18, 72, 0.7)), url(../images/knowledge-process-outsourcing-banner-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.b-p-o-main-bg{
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 18,  72, 0.7), rgba(0, 18, 72, 0.7)), url(../images/business-process-outsourcing-banner-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.digital-marketing-main-sec{
+    padding: 50px 0px;
+}
+.digital-marketing-tit{
+    color: #0f2255;
+    margin-bottom: 50px;
+}
+.digital-marketing-spactal-tit{
+    color: #fc7600;
+    font-weight: 800;
+}
+.digital-marketing-card{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
+}
+.digital-marketing-text-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.card-img-top{
+    height: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.digital-marketing-title{
+    font-size: 25px !important;
+    font-family: "Uni Neue" !important; 
+    font-weight: 800;
+}
+.digital-marketing-description{
+
+}
+
+.digital-marketing-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.row:hover .digital-marketing-card:not(:hover) {
+    filter: blur(2px);
+}
+/* digital marketing services end */
+
+
+
+
+
+
 
 
 
@@ -1023,3 +1166,33 @@ align-items: center;
 /*** copyright end ***/
 
 
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    .row {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-bottom: 30px;
+    }
+    .digital-marketing-card{
+        margin: 20px 0px;
+    }
+    .row:hover .digital-marketing-card:not(:hover) {
+        filter: blur(0px);
+    }
+}
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+}

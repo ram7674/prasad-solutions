@@ -614,7 +614,7 @@ align-items: center;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
-    height: 400px;
+    height: 330px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -656,6 +656,7 @@ align-items: center;
     font-size: 25px !important;
     font-family: "Uni Neue" !important; 
     font-weight: 800;
+    margin-bottom: 20px;
 }
 .digital-marketing-description{
     text-align: justify;
@@ -1134,52 +1135,156 @@ align-items: center;
 
 
 
-/*  */
 
-
-
-
-
-.navbar-toggler {
-    border: none;
+/*** Services Start ***/
+.service-main-bg{
+    padding: 60px 0px 40px;
 }
-.navbar-toggler .icon-bar {
-    width: 34px;
-    height: 1px !important;
-    background-color: #1b1b1b;
-    display: block;
-    padding: 2px 0px;
-    transition: all 0.4s;
+.service-main-bg .service-content-inner {
+    transition: 0.5s;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
-.navbar-toggler .icon-bar + .icon-bar {
-    margin-top: 4px;
-}
-.navbar-toggler.collapsed .top-bar {
-    transform: rotate(0);
+.service-main-bg .service-content-inner:hover {
     position: relative;
-    top: 0;
+    background: var(--bs-primary) !important;
 }
-.navbar-toggler.collapsed .middle-bar {
-    opacity: 1;
+
+.service-main-bg .service-content-inner .service-content h5,
+.service-main-bg .service-content-inner .service-content p,
+.service-main-bg .service-content-inner .service-icon i {
+    transition: 0.5s;
 }
-.navbar-toggler.collapsed .bottom-bar {
-    transform: rotate(0);
+
+.service-main-bg .service-content-inner:hover .service-content h5,
+.service-main-bg .service-content-inner:hover .service-content p,
+.service-main-bg .service-content-inner:hover .service-icon i {
+    color: var(--bs-white) !important;
+}
+.marketing-scales-tit{
+    color: #fc7600;
+    font-weight: 800;
+}
+.mark-sal-tit{
+    font-size: 25px !important;
+    font-family: "Uni Neue" !important;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+/*** Service End ***/
+
+
+
+
+
+
+/* FAQs start */
+.faq{
+    padding: 50px 0px 100px;
+}
+.faq .faq-container {
+    margin-top: 15px;
+}
+
+.faq .faq-container .faq-item {
     position: relative;
-    top: 0;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    overflow: hidden;
+    transition: 0.3s;
+    border-radius: 10px;
 }
-.navbar-toggler:not(.collapsed) .top-bar {
-    transform: rotate(45deg);
-    position: relative;
-    top: 7px;
+
+.faq .faq-container .faq-item:last-child {
+    margin-bottom: 0;
 }
-.navbar-toggler:not(.collapsed) .middle-bar {
+
+.faq .faq-container .faq-item h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 30px 0 32px;
+    transition: 0.3s;
+    cursor: pointer;
+    font-family: "Uni Neue" !important;
+}
+
+.faq .faq-container .faq-item h3 span {
+    color: var(--accent-color);
+    padding-right: 5px;
+}
+
+.faq .faq-container .faq-item h3:hover {
+    color: var(--accent-color);
+}
+
+.faq .faq-container .faq-item .faq-content {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: 0.3s ease-in-out;
+    visibility: hidden;
     opacity: 0;
 }
-.navbar-toggler:not(.collapsed) .bottom-bar {
-    transform: rotate(-45deg);
-    position: relative;
-    top: -9px;
+
+.faq .faq-container .faq-item .faq-content p {
+    margin-bottom: 0;
+    overflow: hidden;
 }
+
+.faq .faq-container .faq-item .faq-icon {
+    position: absolute;
+    top: 22px;
+    left: 20px;
+    font-size: 20px;
+    line-height: 0;
+    transition: 0.3s;
+    color: var(--accent-color);
+}
+
+.faq .faq-container .faq-item .faq-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 16px;
+    line-height: 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.faq .faq-container .faq-item .faq-toggle:hover {
+    color: var(--accent-color);
+}
+
+.faq .faq-container .faq-active {
+    background-color: #f1f3fc;
+    transition: 0.3s;
+}
+
+.faq .faq-container .faq-active h3,
+.faq .faq-container .faq-active h3:hover,
+.faq .faq-container .faq-active .faq-toggle,
+.faq .faq-container .faq-active .faq-icon,
+.faq .faq-container .faq-active .faq-content {
+    color: var(--contrast-color);
+}
+
+.faq .faq-container .faq-active .faq-content {
+    grid-template-rows: 1fr;
+    visibility: visible;
+    opacity: 1;
+    padding-top: 10px;
+}
+
+.faq .faq-container .faq-active .faq-toggle {
+    transform: rotate(90deg);
+}
+/* FAQs start */
+
 
 
 
@@ -1259,8 +1364,63 @@ align-items: center;
     .digital-marketing-card{
         margin: 20px 0px;
     }
-    .row:hover .digital-marketing-card:not(:hover) {
-        filter: blur(0px);
+    .faq .faq-container .faq-item h3 {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .about-main-sec {
+        padding: 55px 0px 10px;
+    }
+    .about-page-img {
+        height: 279px;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .why-choose-main-container {
+        padding: 0px;
+    }
+    .why-choose-inner-sec{
+        flex-direction: column;
+    }
+    .list-wrap {
+        flex-direction: column;
+    }
+    .description {
+        justify-content: center;
+        align-items: center;
+        order: 2;
+    }
+    .icon{
+        order: 1;
+        margin-bottom: 10px;
+    }
+    .why-choose-des {
+        text-align: center;
+    }
+    .why-choose-main-tit {
+        font-size: 33px;
+        margin-bottom: 49px;
+    }
+    .list-wrap-left {
+        flex-direction: column;
+    }
+    .description-right {
+        align-items: center;
+        flex-direction: column;
+        order: 2;
+    }
+    .description-right p{
+        text-align: center;
+    }
+    .right-icon{
+        order: 2;
+    }
+    .about-title {
+        font-size: 26px;
+    }
+    .faq .faq-container .faq-item .faq-content p {
+        text-align: justify;
     }
 }
 

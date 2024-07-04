@@ -585,6 +585,18 @@ align-items: center;
     justify-content: center;
     align-items: center;
 }
+.solutions-main-bg{
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 18,  72, 0.7), rgba(0, 18, 72, 0.7)), url(../images/Solutions-banner-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .contact-main-bg{
     height: 400px;
     position: relative;
@@ -1287,6 +1299,140 @@ align-items: center;
 
 
 
+/* web services Start */
+.web-services-bg{
+    padding: 70px 0px;
+}
+.card-deck{
+    background-color: #CCCAF0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    border-radius: 20px;
+}
+.card-images{
+    border-radius: 15px;
+    height: 260px;
+    width: 100%;
+}
+.web-services-car2{
+    padding-left: 30px;
+}
+.web-services-title{
+    font-size: 25px !important;
+    font-family: "Uni Neue" !important;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.web-services-text{
+    text-align: justify;
+    color: #000;
+}
+.web-services-card-ml{
+    margin-right: 30px !important;
+}
+
+.card-deck2{
+    background-color: #F7CEE2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    border-radius: 20px;
+}
+.card-deck3{
+    background-color: #ADD6D3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    border-radius: 20px;
+}
+/* web services end */
+
+
+
+
+
+
+/* our vission start */
+.our-visions-main-bg{
+    padding: 76px 0px;
+}
+.our-visions-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 30px;
+}
+.our-visions-card-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.our-visions-card-spec{
+    border-right: 2px solid #b4b4b4;
+    border-left: 2px solid #b4b4b4;
+}
+.our-visions-title{
+    margin: 15px 0px;
+    font-size: 25px !important;
+    font-family: "Uni Neue" !important;
+    font-weight: 800;
+}
+.our-visions-image{
+    height: 120px;
+}
+.our-visions-desc{
+    text-align: center;
+}
+.our-vision-tit-colr{
+    color: #e7c903;
+}
+/* our vission end */
+
+
+
+/* our partners start */
+.our-partners-main-bg{
+}
+.our-partners-tit{
+    margin-top: 60px;
+}
+.our-partners-sec-card{
+    padding: 51px 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our-partners-cards{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    padding: 40px 0px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.our-partners-img{
+    height: 100px;
+    width: 270px;
+}
+.our-partners-cards:hover {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+/* our partners end */
+
+
+
+
+
+
+
 
 /*** Footer Start ***/
 .footer {
@@ -1422,11 +1568,22 @@ align-items: center;
     .faq .faq-container .faq-item .faq-content p {
         text-align: justify;
     }
+    .our-visions-card-spec{
+        border-right: 0px;
+        border-left: 0px;
+    }
+    .our-partners-img {
+        height: 71px;
+        width: 93%;
+    }
 }
 
 
 
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
-
+    .our-partners-img {
+        height: 55px;
+        width: 85%;
+    }
 }

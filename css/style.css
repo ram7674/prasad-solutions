@@ -1493,6 +1493,11 @@ align-items: center;
     align-items: center;
     height: 100%;
 }
+.kpo-tit{
+    font-family: "Uni Neue" !important;
+    font-size: 45px;
+    font-weight: 800;
+}
 .kpo-right-cards{
     display: flex;
     flex-wrap: wrap;
@@ -1506,6 +1511,9 @@ align-items: center;
 }
 .kpo-card-tit{
     margin: 10px 0px;
+    font-size: 25px !important;
+    font-family: "Uni Neue" !important;
+    font-weight: 800;
 }
 .kpo-card:hover{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
